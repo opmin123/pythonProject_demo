@@ -50,3 +50,16 @@ print("1~10000的总和是:",str(sum))
 #print(num_list)
 for js_num in range(1,20,2):
     print(js_num)
+
+#=========================================================== 切片技术 ========================
+colors = ['red','blue','green','yellow','black']
+print(colors[0:3])#结果:red,blue,green
+print(colors[1:3])#结果:blue,green
+print(colors[:3])#结果:red,blue,gree
+print(colors[2:])#结果:green,yellow,blcak
+print(colors[:-2])#结果:'red', 'blue', 'green'
+print(colors[-2:])#结果:'yellow', 'black
+
+#================================================ 遍历切片 ===================================
+for color in colors[:3]:
+    print(color.title())#red,blue,green
