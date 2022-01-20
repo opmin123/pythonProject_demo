@@ -95,3 +95,7 @@ elif age < 18:
     print("your admission cost $5.")
 else:
     print("your admission cost is $10.")
+
+#============================================== 字典 ===================================
+aline = {'color':'green','points':'23'}
+print(aline['color'])
