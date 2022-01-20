@@ -63,3 +63,35 @@ print(colors[-2:])#结果:'yellow', 'black
 #================================================ 遍历切片 ===================================
 for color in colors[:3]:
     print(color.title())#red,blue,green
+#================================================ 复制列表 ==================================
+my_foods = ['pizza','falafel','carrot cake']
+#friend_foods = my_foods
+friend_foods = my_foods[:]
+print(friend_foods)
+my_foods.append('ice cream')
+friend_foods.append("cannoli")
+print(friend_foods)
+print(my_foods)
+#================================================ 元组 =====================================
+#元组的值是不能修改的,但是可以给整个元组重新复制
+distmeno = (10,20)
+print(distmeno[0])
+#distmeno[0]=30//错误,不能修改元组的值
+print(distmeno[0])
+
+#================================================ python if 语句 ==========================
+cars = ['audi','bmw','subaru','toyota']
+for car in cars:
+    if car == 'bmw':
+        print(car.upper()) #相等所有字母大写
+    else:
+        print(car.title())#否则首字母大写
+
+#=============================================== if-elif-else ===========================
+age = 18
+if age < 15:
+    print("your admission cost is $0.")
+elif age < 18:
+    print("your admission cost $5.")
+else:
+    print("your admission cost is $10.")
