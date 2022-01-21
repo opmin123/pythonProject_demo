@@ -99,4 +99,20 @@ else:
 #============================================== 字典 ===================================
 aline = {'color':'green','points':'23'}
 print(aline['color'])
-print("")
+#=========================================== 2022-1-21 字典循环 ==================================
+favorite_lanaguages = {'jen':'python','sarah':'c','edward':'ruby','phil':'python'}
+print("Sarah`s favorite language is " + favorite_lanaguages['sarah'].title() + '.')
+for key , value in favorite_lanaguages.items():
+    print("\nKey:" + key)
+    print("Value:" + value)
+for name , language in favorite_lanaguages.items():
+    print(name.title() + "`s favorite language is " + language.title() + ".")
+#=========================================== 字典列表 ============================================
+alien_0 = {'color':'green','points':5}
+alien_1 = {'color':'yellow','points':10}
+alien_2 = {'color':'red','points':15}
+aliens = [alien_0,alien_1,alien_2]
+for alien in aliens:
+    print(alien)
+#=========================================== python 用户输入 ====================================
+age = input("hellow old are youage ")
